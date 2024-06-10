@@ -18,7 +18,7 @@ public class Main {
 
             BillingService billingService = new BillingService();
 
-            IndividualClient indClient = new IndividualClient("EKW010203040", 800, 300, "Mr.", "Ben Guirat", "Wassimf");
+            IndividualClient indClient = new IndividualClient("EKW010203040", 800, 300, "Mr.", "Ben Guirat", "Wassim");
             ProfessionalClient proClientSupCa = new ProfessionalClient("EKW123456789", 1560, 452, "12345678901234", "Enterprise 1", 1200000);
             ProfessionalClient proClientInfCa = new ProfessionalClient("EKW987654321", 1266, 432, "98765432109876", "Enterprise 2", 800000);
 
