@@ -106,6 +106,16 @@ Facture générée: 123.6 €
 ### Logging
 All log messages are written to billing_system.log in the root directory. The logging includes error messages for any exceptions encountered.  
 
+## Java CI with Maven
+
+This automated workflow orchestrates the continuous integration (CI) process for this project using Maven. It consists of two key jobs:
+
+- **build**: This job executes the necessary steps to build your project, including setting up the JDK, installing Maven dependencies, checking for code style violations with Checkstyle, and running unit tests.
+  
+- **run**: This job depends on the `build` job and executes the main class of your Java application.
+
+The workflow is triggered on every push or pull request made to the `master` branch, as well as at regular intervals according to the defined schedule (`cron: '0 0 * * *'`, every 24 hours).
+
 ## Future Enhancements
 Adding more customer types.  
 Supporting more energy types.  
