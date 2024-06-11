@@ -1,0 +1,42 @@
+<!DOCTYPE module PUBLIC
+          "-//Puppy Crawl//DTD Check Configuration 1.3//EN"
+          "https://checkstyle.org/dtds/configuration_1_3.dtd">
+
+<module name="Checker">
+    <!-- Settings -->
+    <property name="severity" value="error"/>
+    <property name="charset" value="UTF-8"/>
+
+    <!-- JavaDoc -->
+    <module name="JavadocMethod"/>
+    <module name="JavadocType"/>
+
+    <!-- Naming Conventions -->
+    <module name="NameConvention"/>
+
+    <!-- Blocks -->
+    <module name="NeedBraces"/>
+
+    <!-- Import Control -->
+    <module name="AvoidStarImport"/>
+
+    <!-- Coding Style -->
+    <module name="FileTabCharacter" severity="error"/>
+    <module name="NewlineAtEndOfFile" severity="error"/>
+    <module name="RedundantModifier" severity="error"/>
+    <module name="ModifierOrder" severity="error"/>
+    <module name="AvoidNestedBlocks" severity="error"/>
+    <module name="EmptyBlock" severity="error"/>
+    <module name="EmptyStatement" severity="error"/>
+    <module name="NoWhitespaceBefore" severity="error"/>
+    <module name="RegexpSinglelineJava" severity="error"/>
+
+    <!-- Finalizer -->
+    <module name="AvoidFinalizer"/>
+
+    <!-- Size Violations -->
+    <module name="LineLength" severity="error"/>
+    <module name="MethodLength" severity="error"/>
+    <module name="ParameterNumber" severity="error"/>
+    <module name="FileLength" severity="error"/>
+</module>
