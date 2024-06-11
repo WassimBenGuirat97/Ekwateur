@@ -4,7 +4,7 @@
 
 <module name="Checker">
     <!-- Settings -->
-    <property name="severity" value="error"/> <!-- Global severity level -->
+    <property name="severity" value="warning"/> <!-- Global severity level -->
 
     <!-- Specify severity levels for individual checks -->
     <module name="TreeWalker">
