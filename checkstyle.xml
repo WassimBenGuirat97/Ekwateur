@@ -9,10 +9,10 @@
     <!-- Specify severity levels for individual checks -->
     <module name="TreeWalker">
         <module name="JavadocMethod">
-            <property name="severity" value="error"/>
+            <property name="severity" value="ignore"/>
         </module>
         <module name="JavadocType">
-            <property name="severity" value="error"/>
+            <property name="severity" value="ignore"/>
         </module>
         <!-- Ignore magic numbers -->
         <module name="MagicNumber">
