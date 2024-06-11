@@ -34,3 +34,4 @@ jobs:
     steps:
     - name: Run Main class
       run: mvn exec:java -Dexec.mainClass="org.ekwateur.Main"
+
