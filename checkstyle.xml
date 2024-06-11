@@ -20,7 +20,7 @@
         </module>
         <!-- Ignore FinalParameters -->
         <module name="FinalParameters">
-            <property name="ignoreMethodParameters" value="true"/>
+            <property name="severity" value="ignore"/>
         </module>
         <!-- Add more modules with their respective severity levels -->
     </module>
