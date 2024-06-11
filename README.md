@@ -100,9 +100,8 @@ mvn exec:java -Dexec.mainClass="org.ekwateur.Main"
 The application generates a bill for both professional and individual clients based on their energy consumption. The messages displayed, including currency symbols, are localized based on the system's default locale.
 
 ### Example Output
+Votre facture pour ce mois est:  154.3 €  
 
-Facture générée: 154.3 €  
-Facture générée: 123.6 €
 ### Logging
 All log messages are written to billing_system.log in the root directory. The logging includes error messages for any exceptions encountered.  
 
