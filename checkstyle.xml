@@ -9,14 +9,14 @@
     <!-- Specify severity levels for individual checks -->
     <module name="TreeWalker">
         <module name="JavadocMethod">
-            <property name="severity" value="ignore"/>
+            <property name="severity" value="warning"/>
         </module>
         <module name="JavadocType">
-            <property name="severity" value="ignore"/>
+            <property name="severity" value="warning"/>
         </module>
         <!-- Ignore magic numbers -->
         <module name="MagicNumber">
-            <property name="severity" value="ignore"/>
+            <property name="severity" value="warning"/>
         </module>
         <!-- Ignore FinalParameters -->
         <module name="FinalParameters">
