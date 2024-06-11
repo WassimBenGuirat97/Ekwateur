@@ -4,18 +4,16 @@
 
 <module name="Checker">
     <!-- Settings -->
-    <property name="severity" value="warning"/> <!-- Default severity level -->
+    <property name="severity" value="error"/> <!-- Global severity level -->
 
-    <!-- Configure severity for specific checks -->
-    <module name="JavadocMethod">
-        <property name="severity" value="error"/>
+    <!-- Specify severity levels for individual checks -->
+    <module name="TreeWalker">
+        <module name="JavadocMethod">
+            <property name="severity" value="error"/>
+        </module>
+        <module name="JavadocType">
+            <property name="severity" value="error"/>
+        </module>
+        <!-- Add more modules with their respective severity levels -->
     </module>
-    <module name="JavadocType">
-        <property name="severity" value="error"/>
-    </module>
-    <module name="NameConvention">
-        <property name="severity" value="error"/>
-    </module>
-    <!-- Add more modules with their respective severity levels -->
-
 </module>
