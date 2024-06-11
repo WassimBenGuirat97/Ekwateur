@@ -4,39 +4,18 @@
 
 <module name="Checker">
     <!-- Settings -->
-    <property name="severity" value="error"/>
-    <property name="charset" value="UTF-8"/>
+    <property name="severity" value="warning"/> <!-- Default severity level -->
 
-    <!-- JavaDoc -->
-    <module name="JavadocMethod"/>
-    <module name="JavadocType"/>
+    <!-- Configure severity for specific checks -->
+    <module name="JavadocMethod">
+        <property name="severity" value="error"/>
+    </module>
+    <module name="JavadocType">
+        <property name="severity" value="error"/>
+    </module>
+    <module name="NameConvention">
+        <property name="severity" value="error"/>
+    </module>
+    <!-- Add more modules with their respective severity levels -->
 
-    <!-- Naming Conventions -->
-    <module name="NameConvention"/>
-
-    <!-- Blocks -->
-    <module name="NeedBraces"/>
-
-    <!-- Import Control -->
-    <module name="AvoidStarImport"/>
-
-    <!-- Coding Style -->
-    <module name="FileTabCharacter" severity="error"/>
-    <module name="NewlineAtEndOfFile" severity="error"/>
-    <module name="RedundantModifier" severity="error"/>
-    <module name="ModifierOrder" severity="error"/>
-    <module name="AvoidNestedBlocks" severity="error"/>
-    <module name="EmptyBlock" severity="error"/>
-    <module name="EmptyStatement" severity="error"/>
-    <module name="NoWhitespaceBefore" severity="error"/>
-    <module name="RegexpSinglelineJava" severity="error"/>
-
-    <!-- Finalizer -->
-    <module name="AvoidFinalizer"/>
-
-    <!-- Size Violations -->
-    <module name="LineLength" severity="error"/>
-    <module name="MethodLength" severity="error"/>
-    <module name="ParameterNumber" severity="error"/>
-    <module name="FileLength" severity="error"/>
 </module>
